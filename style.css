@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(30, 10, 10, 0.75),rgba(10, 0, 0, 0.75)), url("child-orphanage-in-ahmedabad.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #fff6f3;
+}
+.container h1{
+    margin-left: -5%;
+    margin-top: 1%;
+    font-family: 'Young Serif', serif;
+}
+.container p{
+    margin-left: -5%;
+    font-family: 'Young Serif', serif;
+}
+.container img{
+    margin-left: -25%;
+    margin-top: -50px;
+}
+.nav-item {
+    margin-right: 4px; 
+}
+.navbar{
+    margin-top: 50px;
+    margin-right: -100px;
+    
+}
+
+.nav-item a{
+    font-family: 'Young Serif', serif;
+    transition: 0.5s
+}
+.nav-item:hover a:nth-child(1){
+    margin-right:10px;
+}
+
+.nav-item:hover a:nth-child(2){
+    margin-left:10px;
+}
+
+.nav-item:hover a{
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 18px #be3434;
+}
+
+
+.swipetext{
+    color: white;
+    margin-left: 150px;
+    margin-top: -80px;
+    
+
+}
+
+.first{
+    display: inline-block;
+    animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, .86);
+    z-index: 1;
+    position: relative;
+}
+
+.slide{
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.second{
+    z-index: -1;
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    display: inline-block;
+    animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, .86);
+    &:after{
+        position: absolute;
+        display: block;
+        content: '';
+        top:0;
+        left:0;
+        right:100%;
+        width: 0%;
+        bottom:0;
+        z-index: 1;
+        background-color:wheat ;
+        animation: swipe-in-text 1s ease-out 1s forwards;
+    }
+}
+
+.text{
+    color: #c69265;
+    animation: fade-in-text 0.01s linear 1.5s forwards;
+    opacity: 0;
+}
+
+.slidein{
+    animation: slideMe .7s ease-in;
+}
+
+
+@keyframes slideMe{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+.don-but{
+    margin-left: 150px;
+    border-radius: 7%;
+    background-color: #c69265;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Overpass', sans-serif;
+    font-size: large;
+}
+
+button:hover{
+    background-color: #935f31;
+}
+
+.mission{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+}
+
+.missionhead{
+    padding: 50px;
+    font-family: 'Young Serif', serif;
+    background-color: #935f317c;
+    border: #935f317c;
+    
+    margin-top: 80px;    
+}
+
+.card{
+    margin-left: 80px;
+    background-color: rgba(172, 124, 36, 0.699);
+    color: whitesmoke;
+    width: 300px;
+    margin-top: 90px;
+}
+
+.card1, .card2, .card3{
+    height: 460px;
+    width: 390px;
+
+}
+
+.card2{
+    margin-left: 170px;
+}
+
+.card3{
+    height: 460px;
+    margin-left: 280px;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+@keyframes firstspan{
+    0%{
+        transform: translateX(50%);
+    }
+    60%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes secondspan{
+    0%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes swipe-in-text{
+    0%{
+        width: 0%;
+        right: 100%;
+        left:0;
+    }
+    50%{
+        width: 100%;
+        right: 0%;
+        left: 0;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes fade-in-text{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

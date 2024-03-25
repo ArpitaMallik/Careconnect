@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareConnect</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- BOOTSTRAP END -->
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+        <!--FONTS END-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+    
+        <div class="row">
+            <div class="col-4">
+                <img src="logo2.png" style="margin-top: -50px;">
+            </div>
+            <div class="col-lg-8 col-sm-9">
+                <nav class="navbar navbar-expand-lg p-3" style="margin-left: 240px; margin-right: 10px;">
+
+                    <button class="navbar-toggler ms-auto" type="button"           
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav m-lg-auto">
+                            
+                            <li class="nav-item"><a style="color:rgb(255, 248, 248); font-size:larger" class="section home nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a style="color:rgb(255, 255, 255); font-size:larger" class="section child nav-link" href="#child">Meet The Children</a></li>
+                            <li class="nav-item"><a style="color:rgb(255, 255, 255); font-size:larger" class="section skill nav-link" href="#donate">Donate</a></li>
+                            
+                            <li class="nav-item"><a style="color:rgb(255, 255, 255); font-size:larger" class="section contact nav-link" href="#cont">Contact</a></li>
+                            <li class="nav-item"><a style="color:rgb(255, 255, 255); font-size:larger" class="section contact nav-link" href="#contact">Log In or Sign Up</a></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wrapper">
+                <div class="swipetext animation">
+                <h1 style="font-family: 'Young Serif', serif; font-size: 80px;">
+                        <div class="first">Welcome to </div>
+                        <div class="slide">
+                        <div class="second text"> Care Connect</div>
+                        </div>
+                </h1>
+                    <h3 class="slidein" style="font-family: 'Josefin Sans', sans-serif;">Bridging Hearts, Changing Lives</h3>
+                    <p class="slidein" style="font-family: 'Josefin Sans', sans-serif;"> 
+                        Our mission is to connect orphaned children with loving families through adoption while providing them with quality education and nurturing care. Join us<br> in transforming lives and building a brighter future for these children. </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="don-but slidein">Donate</button>
+        </div>
+        <!--MISSION SECTION-->
+        
+        <div class="mission">
+            <div class="title text-center mb-3">
+                <h3 class="font-weight-bolder missionhead">Our Mission and Vision</h3>
+            </div>
+            
+            <div class="row reveal">
+                <div class="col-lg-3">
+                    <div class="card card1">
+                        <img class="card-img-top" src="orphan1.jpg">
+                        <div class="card-body">
+                            <h4><strong>Empowering Orphaned Children</strong></h4>
+                            <p>Our mission is to empower orphaned and vulnerable children by providing them with a safe, nurturing environment, quality education, and access to essential services.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card card2">
+                        <img class="card-img-top" src="orphanwparents.png">
+                        <div class="card-body">
+                            <h4><strong>Facilitating Adoption and Support</strong></h4>
+                            <p>We aim to facilitate the adoption process for children in need and provide ongoing support to adoptive families, ensuring a loving and stable home environment.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card card3">
+                        <img class="card-img-top" src="file-4916-c9e3884eb78580907a167f031881de00.jpg">
+                        <div class="card-body">
+                            <h4><strong>Facilitating Adoption and Support</strong></h4>
+                            <p>We aim to facilitate the adoption process for children in need and provide ongoing support to adoptive families, ensuring a loving and stable home environment.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--MISSION SECTION END-->
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i=0; i<reveals.length; i++)
+            {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight-revealpoint)
+                {
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
